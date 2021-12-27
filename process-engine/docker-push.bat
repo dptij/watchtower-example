@@ -1,1 +1,1 @@
-docker image push dpisarenko/watchtower-example:v1
+docker image push dpisarenko/watchtower-example:latest
