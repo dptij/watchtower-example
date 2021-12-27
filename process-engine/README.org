@@ -1,0 +1,19 @@
+#+STARTUP: logdone
+#+TITLE: MS-257: Blog: Minimal CI/CD pipeline for a Camunda instance in a cloud
+
+* How to build a Docker image
+
+** Step 1
+
+#+begin_src bash
+mvn clean package
+#+end_src
+
+** Step 2: Start Docker
+
+** Step 3
+
+#+begin_src bash
+docker build --tag=watchtower-example .
+#+end_src
+
