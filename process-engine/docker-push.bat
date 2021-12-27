@@ -1,0 +1,1 @@
+docker image push dpisarenko/watchtower-example:latest

@@ -17,3 +17,30 @@ mvn clean package
 docker build --tag=watchtower-example .
 #+end_src
 
+* How to push Docker image to DockerHub
+
+** Prerequisites
+
+ * All steps from section "How to build a Docker image" have been executed.
+
+** Step 1: Find out the container ID
+
+#+begin_src bash
+docker container ls
+#+end_src
+
+Write down the container ID of the "watchtower-example" application for further reference.
+
+** Step 2
+
+Run the command
+
+#+begin_src bash
+docker container commit XXXXXXXX dpisarenko/watchtower-example:latest
+#+end_src
+
+where ~XXXXXXXX~ is the container ID from step 1.
+
+docker container commit 00c29078bd3d dpisarenko/watchtower-example:latest
+
+docker push dpisarenko/watchtower-example:latest

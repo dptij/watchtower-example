@@ -1,1 +1,1 @@
-docker build --tag watchtower-example .
+docker build --tag dpisarenko/watchtower-example .
